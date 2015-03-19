@@ -1,7 +1,10 @@
 ;; Some custom org-capture templates
 (setq org-capture-templates
       '(
-        ("t" "Todo - project" entry (file+headline (concat ffip-project-root "todo.org") "Tasks")
+        ("t" "Todo - project" entry
+         (file+headline
+          (concat ( ffip-project-root) "todo.org")
+ "Tasks")
          "* TODO %?\n  %i\n  %a")
         ("T" "Todo" entry (file+headline "~/org/todo.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
