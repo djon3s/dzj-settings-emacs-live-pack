@@ -1,6 +1,9 @@
 ;; Some custom org-capture templates
 (setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/org/todo.org" "Tasks")
+      '(
+        ("t" "Todo - project" entry (file+headline (concat ffip-project-root "todo.org") "Tasks")
+         "* TODO %?\n  %i\n  %a")
+        ("T" "Todo" entry (file+headline "~/org/todo.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
 
         ("e" "Emacs" entry (file+headline "~/org/learning/emacs_commands.org" "Emacs Commands"))
