@@ -13,3 +13,6 @@
 
 ;; To add key to access org-mode agenda globally
 (define-key global-map (kbd "C-c a") 'org-agenda)
+
+;; To pull up magit status
+(global-set-key (kbd "C-c g s") 'magit-status)
