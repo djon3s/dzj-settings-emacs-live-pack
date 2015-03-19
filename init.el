@@ -8,5 +8,6 @@
 (live-load-config-file "bindings.el")
 (live-load-config-file "org/settings.el")
 (live-load-config-file "org/capture-templates.el")
+(live-load-config-file "org/export-templates.el")
 (live-load-config-file "org/bindings.el")
 (live-load-config-file "dictionary.el")
