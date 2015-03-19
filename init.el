@@ -6,6 +6,7 @@
 ;; Load bindings config
 (live-load-config-file "startup.el")
 (live-load-config-file "bindings.el")
+(live-load-config-file "functions.el")
 (live-load-config-file "org/settings.el")
 (live-load-config-file "org/capture-templates.el")
 (live-load-config-file "org/export-templates.el")
