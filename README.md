@@ -2,8 +2,8 @@
 Some of my usual emacs settings for using with emacs live.
 
 ### TODO
-- [ ] add a function that checks if we're in a git repo, if so add todo to that repo see: `(define-key global-map "\C-cc" 'org-capture)`
 
+![Image of Great Yak Shave!](https://raw.githubusercontent.com/djon3s/dzj-settings-emacs-live-pack/master/lib/yakshave8.png)
 ### init.el
 
 ### config
