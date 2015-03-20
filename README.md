@@ -4,6 +4,9 @@ Some of my usual emacs settings for using with emacs live.
 ### TODO
 
 ![Image of Great Yak Shave!](https://raw.githubusercontent.com/djon3s/dzj-settings-emacs-live-pack/master/lib/yakshave8.png)
+
+- [ ] Add Python environment.
+
 ### init.el
 
 ### config
