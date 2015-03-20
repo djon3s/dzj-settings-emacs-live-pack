@@ -3,9 +3,12 @@
       '(
         ("t" "Todo - project" entry
          (file+headline
-          (concat ( ffip-project-root) "todo.org")
+          (progn
+            (shell-command (concat "touch " (ffip-project-root) "todo.org"))
+            (concat (ffip-project-root) "todo.org"))
  "Tasks")
          "* TODO %?\n  %i\n  %a")
+
         ("T" "Todo" entry (file+headline "~/org/todo.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
 
