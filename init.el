@@ -3,7 +3,11 @@
 ;; Use this file to initiate the pack configuration.
 ;; See README for more information.
 
-;; Load bindings config
+;; Load libs
+(live-add-pack-lib "org-anki")
+(live-add-pack-lib "i3-emacs")
+
+;; Load configs
 (live-load-config-file "startup.el")
 (live-load-config-file "bindings.el")
 (live-load-config-file "functions.el")

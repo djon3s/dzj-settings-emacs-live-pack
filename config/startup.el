@@ -17,3 +17,12 @@
 (switch-to-buffer (get-buffer-create (generate-new-buffer-name "*org-scratch*")))
 (insert "Scratch buffer with org-mode.\n\n")
 (org-mode)
+
+;; Require stuff from our libs
+(require 'ox-anki)
+(require 'i3)
+(require 'i3-integration)
+
+;; Get rid of annoying tendency for ido to require you to visit
+;; frame to see buffer.
+(setq ido-default-buffer-method 'selected-window)
