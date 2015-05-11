@@ -26,3 +26,15 @@
 ;; Get rid of annoying tendency for ido to require you to visit
 ;; frame to see buffer.
 (setq ido-default-buffer-method 'selected-window)
+
+;; Open links in Eww browser.
+(setq browse-url-browser-function 'eww-browse-url)
+;;; ... and make links open in a new window with buffername that's from url
+(defadvice eww-render (after set-eww-buffer-name activate)
+  (rename-buffer (concat "*eww-" (or eww-current-title
+                                     (if (string-match "://" eww-current-url)
+                                         (substring eww-current-url (match-beginning 0))
+                                       eww-current-url)) "*") t))
+
+;; Add eldoc like mode for clojure...
+;(add-hook 'cider-mode-hook #'cljdoc)
