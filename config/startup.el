@@ -44,3 +44,12 @@
 ;; As per... http://stackoverflow.com/questions/18278310/emacs-ansi-term-not-tab-completing
 (add-hook 'term-mode-hook (lambda()
         (setq yas-dont-activate t)))
+
+;; In order to use a REPL with figwheel from emacs.
+;; Sun 26 Feb 2017 18:44:04 AEDT
+
+(defun figwheel-repl ()
+  (interactive)
+  (run-clojure "lein figwheel"))
+
+(add-hook 'clojure-mode-hook #'inf-clojure-minor-mode)

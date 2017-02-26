@@ -7,7 +7,9 @@
 (live-add-pack-lib "org-anki")
 (live-add-pack-lib "i3-emacs")
 (live-add-pack-lib "python-mode")
-;(live-add-pack-lib "cljdoc")
+;;(live-add-pack-lib "cljdoc")
+(live-add-pack-lib "inf-clojure")
+(require 'inf-clojure)
 
 ;; Load configs
 (live-load-config-file "startup.el")
