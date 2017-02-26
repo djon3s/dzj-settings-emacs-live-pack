@@ -38,3 +38,9 @@
 
 ;; Add eldoc like mode for clojure...
 ;(add-hook 'cider-mode-hook #'cljdoc)
+
+;; Fri 17 Jul 2015
+;; Work around to allow ansi-term / term mode to have tab completion.
+;; As per... http://stackoverflow.com/questions/18278310/emacs-ansi-term-not-tab-completing
+(add-hook 'term-mode-hook (lambda()
+        (setq yas-dont-activate t)))
