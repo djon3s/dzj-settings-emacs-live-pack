@@ -1,0 +1,3 @@
+[submodule "lib/inf-clojure"]
+	path = lib/inf-clojure
+	url = https://github.com/clojure-emacs/inf-clojure

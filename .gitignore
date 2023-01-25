@@ -1,1 +1,5 @@
 *.elc
+*.pyc
+*.el~
+*.tar.gz
+\#.*el
